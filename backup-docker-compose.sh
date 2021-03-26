@@ -55,7 +55,7 @@ fi
 
 for i in $COMPOSE; do
 	PROJECTNAME=${i##*/}
-	echo -e " Backup von Compose Project:\n  * $PROJECTNAME";
+	echo -e " Backup for Compose Project:\n  * $PROJECTNAME";
 	cd $i
 	tar -czf $BACKUPDIR/$PROJECTNAME-$TIMESTAMP.tar.gz .
 	# dont delete last old backups!
